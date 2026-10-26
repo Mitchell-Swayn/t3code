@@ -14,5 +14,9 @@ if (!majorVersion) {
 
 module.exports = {
   nativeModuleSourceType: "files",
-  extraSources: [{ type: "contents", id: "appMajorVersion", contents: majorVersion }],
+  extraSources: [
+    { type: "contents", id: "appMajorVersion", contents: majorVersion },
+    // withCameraControl copies these Swift sources into native targets at prebuild.
+    { type: "dir", filePath: "targets", reasons: ["iosCameraControl"] },
+  ],
 };

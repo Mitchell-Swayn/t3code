@@ -153,6 +153,12 @@ Claude quotas. Tap it to open **Usage → Limits**; on Android this works while 
 the background, otherwise open the app from the launcher. On iOS, use **Edit Widget** to choose
 Session, Weekly, or both for each provider. Reopen T3 to refresh expired readings.
 
+## Camera Control
+
+On an iPhone with Camera Control, open **Settings → Camera → Camera Control** and choose
+**T3 Code** to open the app with the button. From the Lock Screen, the button shows a camera view
+first; press it again or tap **Open T3 Code** to unlock into the app.
+
 ## Keyboard shortcuts
 
 On web and desktop, open Usage from the command palette. While on Usage,
