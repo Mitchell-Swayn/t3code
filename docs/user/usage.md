@@ -157,7 +157,7 @@ Session, Weekly, or both for each provider. Reopen T3 to refresh expired reading
 
 On an iPhone with Camera Control, open **Settings → Camera → Camera Control** and choose
 **T3 Code** to open the app with the button. From the Lock Screen, the button shows a camera view
-first; press it again or tap **Open T3 Code** to unlock into the app.
+first; tap **Open T3 Code** to unlock into the app.
 
 ## Keyboard shortcuts
 

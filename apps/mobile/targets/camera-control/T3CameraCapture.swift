@@ -13,7 +13,7 @@ struct T3CameraCaptureExtension: LockedCameraCaptureExtension {
   }
 }
 
-// iOS ends the extension without a live viewfinder, so show one and unlock into the app on a press.
+// iOS ends the extension without a live viewfinder, so show one and unlock into the app on a tap.
 struct T3CameraCaptureView: View {
   let session: LockedCameraCaptureSession
   @State private var camera = T3CameraPreviewSession()
@@ -28,11 +28,9 @@ struct T3CameraCaptureView: View {
       .buttonStyle(.borderedProminent)
       .padding(.bottom, 48)
     }
-    .onCameraCaptureEvent { event in
-      if event.phase == .ended {
-        openApp()
-      }
-    }
+    // iOS ends the extension without a hardware button handler, and volume presses
+    // arrive here too, so consume them rather than treating any press as "open".
+    .onCameraCaptureEvent { _ in }
     .onAppear { camera.start() }
     .onDisappear { camera.stop() }
   }
