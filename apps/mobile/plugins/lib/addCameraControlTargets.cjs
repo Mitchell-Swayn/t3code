@@ -149,6 +149,7 @@ function addCameraControlTargets(proj, opts) {
     INFOPLIST_FILE: `${opts.extensionTargetName}/Info.plist`,
     INFOPLIST_KEY_CFBundleDisplayName: `"${opts.displayName}"`,
     INFOPLIST_KEY_NSCameraUsageDescription: `"${opts.cameraUsageDescription}"`,
+    INFOPLIST_KEY_UISupportedInterfaceOrientations: "UIInterfaceOrientationPortrait",
     IPHONEOS_DEPLOYMENT_TARGET: "18.0",
     LD_RUNPATH_SEARCH_PATHS: [
       '"$(inherited)"',
